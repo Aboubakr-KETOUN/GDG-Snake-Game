@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+canvas {
+    border: 1px solid #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.overlay.visible {
+    visibility: visible;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#replayBTN {
+    display: none;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: tomato;
+    text-align: center;
+}
